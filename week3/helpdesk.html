@@ -19,13 +19,13 @@
             <legend>Student details</legend>
 
             <p><label for="studentid">Student ID</label>
-                <input type="text" name="studentid"  id="studentid"  required="required" pattern="[0-9]{7-10}"></p>
+                <input type="text" name="studentid"  id="studentid" required="required" pattern="\d{7-10}"></p>
 
             <p><label for="givenname">Given Name</label>
                 <input type="text" name="givenname" id="givenname" maxlength="15"  required="required"  pattern="[A-Za-z]+">
 
                 <label for="familyname">Family Name</label>
-                <input type="text"  name="familyname" id="familyname"  maxlength="15" required="required"  pattern="[A-Za-z]+"></p>
+                <input type="text"  name="familyname" id="familyname" maxlength="15" required="required"  pattern="[A-Za-z]+"></p>
         </fieldset>
 
         <fieldset>
@@ -81,11 +81,11 @@
             <legend>Preferred Date / Time</legend>
 
             <p><label for="date">Date</label>
-                <input type="text" name="date" id="date" required="required" pattern="\d{1,2}\/\d{1,2}\/\d{4}"></p>
+                <input placeholder="11/11/1111" type="text" name="date" id="date" required="required" pattern="\d{1,2}\/\d{1,2}\/\d{4}"></p>
             <p><label for="time">Time</label>
                 <input type="text" name="time" id="time" required="required" pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]?"></p>
         </fieldset>
-        <p><input type="submit" value="Book">&nbsp;<input type="reset" value="Reset form"></p>
+        <p><input type="submit" value="Book"/>&nbsp;<input type="reset" value="Reset form"></p>
     </form>
 </body>
 </html>
