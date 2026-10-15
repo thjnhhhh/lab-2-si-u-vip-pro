@@ -27,9 +27,6 @@ header {
 }
 
 
-
-
-
 #lists {float: left;}
 
 table {margin: auto;}
@@ -44,16 +41,13 @@ figure {border: 2px solid #ccc;}
 
 footer {border-top: 4px double rgb(245 130 130); clear: both;}
 
-#lists, #tables#hyperlinks, #images {
+#lists, #tables, #hyperlinks, #images {
     width: 50%;
-    text-align: center;
-}
+    text-align: center;}
 
 ol, ul, dl {text-align: left;}
 
-
 article {min-width: 30em;}
-
 
 
 footer p {display: inline-block; width: 33%;}
