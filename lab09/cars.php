@@ -7,8 +7,15 @@
         die("Ta mất kết nối thật rồi em hỡi" . mysqli_connect_error());
     }
 
-    $query = "SELECT * FROM cars";
+    $query = "SELECT * FROM carssss";
     $result = mysqli_query($conn, $query);
+    if ($result) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo $row['ten_cot'] . "<br>";
+        }
+    } else {
+    echo "Lỗi " . mysqli_error($conn);
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
